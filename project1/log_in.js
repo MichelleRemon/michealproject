@@ -9,6 +9,7 @@ function validateform(){
         alert("the password invalid");
         return false;
     }
+    window.location.href="sports.html";
     return true;
 
 }
