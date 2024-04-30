@@ -1,15 +1,23 @@
 function validateform(){
     var email=document.forms["myform"]["email"].value;
     var password=document.forms["myform"]["password"].value;
-    if (email=="" || email!="michelle@gmail.com"){
-        alert("the email invalid");
+    
+    if(email == "" || password == ""){
+        alert("Email and password are required");
         return false;
     }
-    if(password==""||password!="123456"){
-        alert("the password invalid");
+    
+    if(email != "michelle@gmail.com"){
+        alert("The email is invalid");
         return false;
     }
-    window.location.href="sports.html";
-    return true;
-
+    
+    if(password != "123456"){
+        alert("The password is invalid");
+        return false;
+    }
+    
+    
+    window.location.href = "sports.html";
+    return false; 
 }
